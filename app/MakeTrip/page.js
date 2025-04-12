@@ -529,7 +529,7 @@ export default function MakeTrip() {
                                     id="budget"
                                     type="range"
                                     min="1000"
-                                    max="100000"
+                                    max="200000"
                                     step="1000"
                                     value={price}
                                     onChange={(e) => setPrice(parseInt(e.target.value))}
@@ -538,7 +538,7 @@ export default function MakeTrip() {
                                 />
                                 <div className="flex justify-between text-sm text-gray-500 mt-1">
                                     <span>{formatPrice(1000)}</span>
-                                    <span>{formatPrice(100000)}</span>
+                                    <span>{formatPrice(200000)}</span>
                                 </div>
                                 <p className="text-sm text-gray-500 mt-2" aria-live="polite">
                                     {price < 5000 ? 'Budget too low for flights and hotels' : 
